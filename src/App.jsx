@@ -12,7 +12,7 @@ function App() {
     <div id="App">
       <Platform />
       </div>
-      
+       
     </>
   )
 }
