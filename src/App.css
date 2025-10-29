@@ -55,7 +55,7 @@
   height: 20em;
   position: absolute;
   left: 25%;
-  top: 5em;
+  top: 2em;
 }
 #des-containerA{
   width: 100%;
@@ -237,4 +237,42 @@
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#Options{
+  width: 40%;
+  height: 10em;
+  display: flex;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  justify-content: space-around;
+}
+#selector{
+  width: 22%;
+  height: 7em;
+  background-color: rgba(255, 255, 255, 0.912);
+  border-radius: 20px;
+  position: absolute;
+  left: 2%;
+}
+#first, #second, #third, #fourth{
+  width: 20%;
+  height: 7em;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  z-index: 1;
+}
+#first img{
+  width: 100%;
+}
+#second img{
+  width: 100%;
+}
+#third img{
+  width: 100%;
+}
+#fourth img{
+  width: 100%;
 }

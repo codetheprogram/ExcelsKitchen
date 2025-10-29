@@ -90,6 +90,21 @@ const Platform = () => {
               </div>
           </div>
       </div>
+      <div id='Options'>
+        <div id='selector'></div>
+        <button id='first'>
+          <img src={Food1}/>
+        </button>
+        <button id='second'>
+          <img src={Food2}/>
+        </button>
+        <button id='third'>
+          <img src={Food3}/>
+        </button>
+        <button id='fourth'>
+          <img src={Food4}/>
+        </button>
+      </div>
         <div id='Wheel'>
         <img className='food1' src={Food1} />
         <img className='food2' src={Food2} />
