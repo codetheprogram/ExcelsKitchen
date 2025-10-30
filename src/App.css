@@ -25,29 +25,34 @@
   width: 50em;
   height: 50em;
   border-radius: 40em;
+  transition: 1s;
   background-color: transparent;
   border: 5em solid ;
   border-color: rgba(209, 57, 6, 0.282) rgba(235, 163, 29, 0.501) rgba(135, 94, 4, 0.381) rgba(89, 243, 23, 0.233);
-  transform: rotate(205deg) ;
+  transform: rotate(205deg);
   position: absolute;
   right: 62%;
   bottom: 20em;
 }
 #Wheel img{
-  width: 40%;
+  
   height: auto;
 } 
 .food1{
   transform: translateX(-7em);
+  width: 40%;
 }
 .food2{
-  transform: translateX(20em);
+  transform: translateX(20em) rotate(280deg);
+  width: 35%;
 }
 .food3{
   transform: translateX(-7em) translateY(15em);
+  width: 35%;
 }
 .food4{
-  transform: translateX(18em) translateY(15em);
+  transform: translateX(19em) translateY(13em);
+  width: 30%;
 }
 
 #Wheel-description{
@@ -57,13 +62,7 @@
   left: 25%;
   top: 2em;
 }
-#des-containerA{
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  position: absolute;
-  align-items: center;
-}
+
 #first-description{
   font-size: 1.2em;
   font-weight: bold;
@@ -83,11 +82,20 @@
   font-family: "Climate Crisis";
   color: rgba(3, 3, 3, 0.332)
 }
+#des-containerA{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  transition: 1s;
+}
 #des-containerB{
   width: 100%;
   height: 100%;
   justify-content: center;
   position: absolute;
+  transition: 1s;
   opacity: 0;
   align-items: center;
 }
@@ -97,11 +105,13 @@
   justify-content: center;
   opacity: 0;
   position: absolute;
+  transition: 1s;
   align-items: center;
 }
 #des-containerD{
   width: 100%;
   height: 100%;
+  transition: 1s;
   opacity: 0;
   justify-content: center;
   position: absolute;
@@ -134,41 +144,25 @@
   margin-right: 2em;
   margin-top: 5em;
 }
-#food1-description{
+.disappear{
+  width: 100%;
+  height: 0;
+  transition: 1s;
+  opacity: 0;
+  transform: translateX(3em);
+}
+.appear{
   background-color: rgba(255, 255, 255, 0);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 25em;
+  transition: 1s;
+  opacity: 1;
+  transform: translateX(0em);
   border-radius: 15px;
 }
-#food2-description{
-  background-color: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 0;
-  height: 0;
-  opacity: 0;
-  border-radius: 15px;
-}
-#food3-description{
-  background-color: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 0;
-  height: 0;
-  opacity: 0;
-  border-radius: 15px;
-}
-#food4-description{
-  background-color: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 0;
-  height: 0;
-  opacity: 0;
-  border-radius: 15px;
-}
+
 #food-head{
   font-size: 1.5em;
   width: 100%;
@@ -183,7 +177,6 @@
   width: 2em;
   height: 3.5em;
   margin-left: 1em;
-  background-color: rgba(89, 243, 23, 0.579);
   border-radius: 10px;
   font-weight: bold;
 }
@@ -192,6 +185,18 @@
   text-align: center;
   font-family: 'Exo 2';
   color: rgba(3, 3, 3, 0.568);
+}
+#food1-description #rate{
+  background-color: rgba(89, 243, 23, 0.579);
+}
+#food2-description #rate{
+  background-color: rgba(209, 57, 6, 0.282);
+}
+#food3-description #rate{
+  background-color: rgba(235, 163, 29, 0.501);
+}
+#food4-description #rate{
+  background-color: rgba(135, 94, 4, 0.381);
 }
 #chef{
   width: 80%;
@@ -235,6 +240,7 @@
  }
 #L-D button:hover{
   cursor: pointer;
+  transform: translateY(-0.5em);
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -248,13 +254,41 @@
   left: 10%;
   justify-content: space-around;
 }
-#selector{
+.selectorA{
   width: 22%;
   height: 7em;
+  transition: 1s;
   background-color: rgba(255, 255, 255, 0.912);
   border-radius: 20px;
   position: absolute;
   left: 2%;
+}
+.selectorB{
+  width: 22%;
+  height: 7em;
+  transition: 1s;
+  background-color: rgba(255, 255, 255, 0.912);
+  border-radius: 20px;
+  position: absolute;
+  left: 27%;
+}
+.selectorC{
+  width: 22%;
+  height: 7em;
+  transition: 1s;
+  background-color: rgba(255, 255, 255, 0.912);
+  border-radius: 20px;
+  position: absolute;
+  left: 52%;
+}
+.selectorD{
+  width: 22%;
+  transition: 1s;
+  height: 7em;
+  background-color: rgba(255, 255, 255, 0.912);
+  border-radius: 20px;
+  position: absolute;
+  left: 76%;
 }
 #first, #second, #third, #fourth{
   width: 20%;
@@ -275,4 +309,34 @@
 }
 #fourth img{
   width: 100%;
+}
+
+#Options-D{
+  width: 40%;
+  height: 4em;
+  display: flex;
+  margin-top: 3em;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  justify-content: space-around;
+}
+#Options-D button{
+  width: 10%;
+  height: 3em;
+  background-color: transparent;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  transition: 1s;
+}
+#Options-D button:hover{
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.579);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transform: translateY(-0.5em);
+}
+
+#Options-D button img{
+  width: 50%;
 }
